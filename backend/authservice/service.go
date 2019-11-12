@@ -6,6 +6,5 @@ type AuthServer struct {
 }
 
 func main() {
-	server := grpc.NewServer()
-	proto.RegisterAuthServiceServer(server, AuthServer{})
+	grpc.NewServer()
 }
